@@ -6,10 +6,10 @@
   "keywords": ["facebook", "codein", "fanatic"],
   "env": {
     "facebook.verify.token": {
-      "description": "Its a random string that you will need to enter at facebook too."
+      "description": "To jest losowy ciąg znaków, który będziesz musiał wpisać także na Facebboku"
     },
     "facebook.access.token": {
-      "description": "You will find this token at messenger page after selecting page."
+      "description": "Znajdziesz ten token na stronie Messengera po wybraniu strony"
     }
   }
 }
