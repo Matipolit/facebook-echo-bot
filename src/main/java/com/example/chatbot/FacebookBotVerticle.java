@@ -70,7 +70,7 @@ public class FacebookBotVerticle extends AbstractVerticle {
                 response.message = i.message;
 
                 if (response.message.text == null) {
-                    response.message.text = "Thanks for your attachment";
+                    response.message.text = "Dzięki za twój załącznik";
                 } else {
                     String data = response.message.text;
 
@@ -79,7 +79,7 @@ public class FacebookBotVerticle extends AbstractVerticle {
                         int random = (int) (Math.random() * jokes.jokes.size());
                         response.message.text = (new Jokes()).jokes.get(random);
                     } else {
-                        response.message.text = "Please please ask me to tell a joke";
+                        response.message.text = "Poproś mnie o opowiedzenie żartu";
                     }
                 }
 
@@ -97,9 +97,9 @@ public class FacebookBotVerticle extends AbstractVerticle {
                                 // Obtain response
                                 HttpResponse<Buffer> res = ar.result();
 
-                                System.out.println("Received response with status code" + res.statusCode());
+                                System.out.println("Otrzymałem odpowiedź z kodem statusu:" + res.statusCode());
                             } else {
-                                System.out.println("Something went wrong " + ar.cause().getMessage());
+                                System.out.println("Coś poszło nie tak " + ar.cause().getMessage());
                             }
                         });
 
